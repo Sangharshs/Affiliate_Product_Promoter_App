@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+   android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/splash_bg_color"
+    tools:context=".SplashActivity">
+<LinearLayout
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:id="@+id/bc"
+        android:background="@drawable/splashicon"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"/>
+    <LinearLayout
+        android:layout_marginTop="150dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <TextView
+          android:layout_gravity="center|center_vertical"
+          android:layout_width="wrap_content"
+          android:textSize="22sp"
+          android:textColor="@android:color/white"
+          android:text="@string/offersrkh_com"
+          android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:textSize="17sp"
+        android:textColor="@android:color/white"
+        android:text="Welcomes You"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+<!--<LinearLayout-->
+<!--    android:id="@+id/cnta"-->
+<!--    android:gravity="center"-->
+<!--    android:layout_marginTop="130dp"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="50dp">-->
+
+    <com.agrawalsuneet.dotsloader.loaders.LazyLoader
+        android:layout_width="wrap_content"
+        android:id="@+id/lazy"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        app:lazyloader_animDur="800"
+        app:lazyloader_dotsDist="10dp"
+        app:lazyloader_dotsRadius="9dp"
+        app:lazyloader_firstDelayDur="150"
+        app:lazyloader_firstDotColor="@android:color/white"
+        app:lazyloader_interpolator="@android:anim/decelerate_interpolator"
+        app:lazyloader_secondDelayDur="300"
+        app:lazyloader_secondDotColor="@android:color/white"
+        app:lazyloader_thirdDotColor="@android:color/white"
+        />
+
+</LinearLayout>
+</RelativeLayout>

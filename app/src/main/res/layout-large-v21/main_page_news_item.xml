@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_marginStart="10dp"
+    android:elevation="10dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/newsImage"
+
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_placeholder"
+            android:transitionName="" />
+
+        <!--        <ImageView-->
+
+        <!--            android:alpha="0.4"-->
+        <!--            android:id="@+id/shadow_bottom"-->
+        <!--            android:src="@drawable/black_c"-->
+        <!--            android:layout_alignBottom="@+id/newsImage"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:scaleType="fitXY"-->
+        <!--            android:layout_height="80dp"/>-->
+        <FrameLayout
+            android:id="@+id/layoutDate"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_below="@+id/news_Head"
+            android:layout_alignParentRight="true"
+            android:layout_margin="7dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginRight="20dp"
+
+            android:backgroundTint="@android:color/white"
+            android:foregroundGravity="center">
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:src="@drawable/time"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:gravity="center"
+                        android:text="08-09-20" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+
+        <FrameLayout
+
+            android:id="@+id/layoutTime"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_below="@+id/news_Head"
+            android:layout_alignParentStart="true"
+            android:layout_margin="7dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="125dp"
+
+            android:backgroundTint="@android:color/white"
+            android:foregroundGravity="center">
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:src="@drawable/ic_baseline_calendar_today_24"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:gravity="center"
+
+
+                        android:text="6 hours ago" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linet"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/newsImage"
+            android:layout_marginTop="2dp"
+            android:background="@color/lineColor"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/newshead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newsImage"
+
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@style/RegularCondensed"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="Lorem is ispum door..."
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/newshead"
+            android:layout_marginTop="2dp"
+            android:background="@color/lineColor"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/line"
+            android:fontFamily="@style/RegularCondensed"
+            android:maxLines="2"
+            android:padding="5dp"
+            android:text="Lorem is ispum door..."
+            android:textColor="@android:color/darker_gray"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

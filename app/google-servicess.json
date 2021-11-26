@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "318253562093",
+    "firebase_url": "https://offersrkh.firebaseio.com",
+    "project_id": "offersrkh",
+    "storage_bucket": "offersrkh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318253562093:android:dfe74ee08d924a9cbd34e4",
+        "android_client_info": {
+          "package_name": "com.webapp.offerSRkh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "318253562093-712j3tg0iuub0rr40doa0l545p4rattb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc0cJEUwE-hRn5cqZmAwUA9zlik1B0MPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "318253562093-712j3tg0iuub0rr40doa0l545p4rattb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#280a50</color>
+    <color name="colorPrimaryDark">#280a50</color>
+    <color name="color_path">#7524E3</color>
+<!--    <color name="colorPrimaryDark">#A1A0A3</color>-->
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorBorder">#9FA6A6</color>
+    <color name="lineColor">#1A1523</color>
+    <color name="blackcolor">#000000</color>
+    <color name="splash_bg_color">#280a50</color>
+</resources>

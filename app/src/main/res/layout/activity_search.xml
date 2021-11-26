@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:id="@+id/navigation_trending_news"
+        tools:context=".ui.trending.TrendingFragment">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_margin="1dp"
+            android:layout_height="?android:attr/actionBarSize"
+            android:backgroundTint="@android:color/white"
+            android:id="@+id/search_toolbar_layout">
+            <androidx.appcompat.widget.Toolbar
+                android:background="@android:color/white"
+                android:id="@+id/toolBar"
+                android:layout_width="match_parent"
+                android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+                android:layout_height="?android:attr/actionBarSize"
+                >
+                <androidx.appcompat.widget.SearchView
+                    android:background="@drawable/rounded_gradiant"
+                    android:backgroundTint="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:queryHint="Search News"
+                    android:id="@+id/search_View"/>
+
+            </androidx.appcompat.widget.Toolbar>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black"/>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_below="@+id/navigation_trending_news"
+        android:layout_gravity="center"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/news_list"/>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "651462578988",
+    "project_id": "offersrkh-dda4d",
+    "storage_bucket": "offersrkh-dda4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651462578988:android:d610fca026c8d8053d1289",
+        "android_client_info": {
+          "package_name": "com.webapp.offerSRkh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651462578988-3m28h5q3c67016chgoptgqdu8g6hm1ho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmiq_s52bbEOQoqJuvrypwyYEFWgdyxHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651462578988-3m28h5q3c67016chgoptgqdu8g6hm1ho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
